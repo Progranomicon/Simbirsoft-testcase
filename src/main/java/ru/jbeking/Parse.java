@@ -24,16 +24,14 @@ public class Parse {
                 sb.append((char) c);
             } else {
                 if (sb.length() > 0) {
-                    //System.out.println("writed");
                     if (!stats.containsKey(sb.toString())) stats.put(sb.toString(), 0L);
                     stats.put(sb.toString(), stats.get(sb.toString()) + 1);
                     sb = new StringBuffer();
 
                 }
             }
-            //System.out.println(sb.length());
-
         }
+        fr.close();
         return stats;
     }
 }
