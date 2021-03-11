@@ -17,6 +17,6 @@ public class ParseTest {
         Parse p = new Parse(TEST_FILENAME);
         HashMap<String, Long> h =  p.go();
         Long expected =  h.get("года");
-        Assert.assertTrue("года - 3", expected == 3); //
+        Assert.assertTrue("года - 3", expected == 3); //Я знаю, не надёжно опираться на данные чужого сайта, но это мой первый тест
     }
 }
